@@ -164,7 +164,7 @@ const Dashboard = () => {
     try {
       const response = await fetch('https://api.api-ninjas.com/v1/quotes', {
         headers: {
-          'X-Api-Key': 'YOUR_API_KEY' // You'll need to get this API key
+          'X-Api-Key': import.meta.env.VITE_QUOTE // You'll need to get this API key
         }
       });
       
